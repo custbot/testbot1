@@ -5,7 +5,7 @@ This customer service chatbot was built with LangChain's ReAct agent and deploye
 ## Features
 - **ReAct Agent**: Uses reasoning and acting (ReAct) framework to decide when to use company-specific knowledge or the language model.
 - **Chainlit UI**: Provides an easy-to-use interface for interacting with the chatbot.
-- **Company-Specific Tool**: Answers queries related to DCS's payment options, account assistance, and contact details.
+- **Company-Specific Tool**: Answers queries related to DCS's payment options, account assistance, and contact details limited to the tools in the code. 
 
 ## Installation
 
