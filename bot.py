@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 from langchain.agents import initialize_agent, AgentType
 from langchain.agents import tool
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 
 # Load environment variables from .env file
 load_dotenv()
@@ -33,7 +33,9 @@ agent = initialize_agent(
     tools=[company_info_tool],
     llm=llm,
     agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
-    verbose=True
+    verbose=True,
+    handle_parsing_errors=True
+
 )
 def react_agent(query):
     """
